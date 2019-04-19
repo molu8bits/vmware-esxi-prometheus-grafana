@@ -1,0 +1,20 @@
+[Unit]
+Description=Prometheus
+Documentation=https://github.com/molu8bits/vmware-esxi-prometheus-grafana
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Environment=ESX_HOST=esx02.mydomain.com
+Environment=ESX_USERNAME=root
+Environment=ESX_PASSWORD=esxrootpassword
+Environment=ESX_DEBUG=info
+Environment=ESX_LISTEN=:9612
+Type=simple
+ExecReload=/bin/kill -HUP $MAINPID
+ExecStart=/usr/local/bin/prometheus-vmware-exporter
+SyslogIdentifier=esx_exporter_02
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
