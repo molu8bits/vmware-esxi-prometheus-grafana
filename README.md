@@ -1,7 +1,8 @@
 # VMWARE ESXi Grafana charts via Prometheus
 
 This Grafana chart is designed for standalone VMWare ESXi.
-Test ESXi software levels: 5.0,5.1 and 6.5.
+
+Tested ESXi software levels: 5.1, 5.5 and 6.5.
 
 
 # Grafana dashboard:
