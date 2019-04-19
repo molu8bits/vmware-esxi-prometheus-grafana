@@ -4,12 +4,19 @@ This Grafana chart is designed for standalone VMWare ESXi.
 Test ESXi software levels: 5.0,5.1 and 6.5.
 
 
-Example charts:
+# Grafana dashboard:
 
-![](_images/79ad77c5.png)
+<p align="left">
+   <img src="images/79ad77c5.png" width="950" />
+</p>
+<br>
+<p align="left">
+   <img src="images/75f5db95.png" width="950" />
+</p>
 
-![](_images/75f5db95.png)
 
+
+# Requirements and setup
 
 Requires to compile GO exported available at:
 https://github.com/devinotelecom/prometheus-vmware-exporter
